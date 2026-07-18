@@ -3,7 +3,7 @@ services:
     name: gym-backend
     runtime: node
     plan: free
-    buildCommand: npm ci --include=dev && npm run prisma:generate && npm run build
+    buildCommand: npm ci --include=dev && npm run build
     startCommand: npm run start:prod
     healthCheckPath: /api/docs
     envVars:
