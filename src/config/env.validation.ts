@@ -40,7 +40,8 @@ class EnvironmentVariables {
   @IsString()
   JWT_REFRESH_EXPIRES_IN!: string;
 
-  @IsUrl({ require_tld: false })
+  @IsString()
+  @IsNotEmpty()
   FRONTEND_URL!: string;
 
   @IsString()
